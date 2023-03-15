@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "ci",
-        "ide"
+        "ide",
+        "tasks"
     ]
 }
