@@ -1,6 +1,6 @@
 ---
 configure_dotfiles: true
-configure_terminal: true
+configure_terminal: false
 configure_macos: true
 
 # Set to 'true' to configure the Dock via dockutil.
@@ -27,10 +27,10 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_repo_version: master # Replace with your default branch
 dotfiles_files:
-  - .zshrc
+  # - .zshrc
   - .gitignore
-  - .inputrc
-  - .osx
+  # - .inputrc
+  # - .macos
   - .vimrc
 
 homebrew_installed_packages:
@@ -63,19 +63,11 @@ homebrew_installed_packages:
 
 homebrew_taps: []
 
-homebrew_cask_appdir: /Applications
+homebrew_cask_appdir: ~/Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
+  - brave-browser
   - sequel-ace
   - slack
-  - sublime-text
-  - transmit
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
