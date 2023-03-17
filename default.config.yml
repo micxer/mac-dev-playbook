@@ -27,7 +27,7 @@ dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
   # - .zshrc
   # - .inputrc
-  # - .macos
+  - .macos
   - .gitconfig
   - .vimrc
 
