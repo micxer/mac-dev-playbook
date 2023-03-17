@@ -27,14 +27,15 @@ dotfiles_repo: https://github.com/micxer/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
-  # - .zshrc
   # - .inputrc
   - .macos
   - .gitconfig
   - .vimrc
+  - .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - direnv
   - git
   - go
   - gpg
@@ -43,7 +44,9 @@ homebrew_installed_packages:
   - sqlite
   - nmap
   - pv
+  - starship
   - wget
+  - zsh-completions
   - zsh-history-substring-search
 
 homebrew_taps: []
