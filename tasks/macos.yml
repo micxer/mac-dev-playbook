@@ -9,7 +9,7 @@
     array_add: "{{ item.array_add | default(false) }}"
     domain: "{{ item.domain | default('NSGlobalDomain') }}"
     key: "{{ item.key }}"
-    type: "{{ item.name | default('string') }}"
+    type: "{{ item.type | default('string') }}"
     value: "{{ item.value }}"
     state: present
   loop: "{{ macos_defaults }}"
