@@ -108,6 +108,108 @@ macos_defaults:
     type: integer
     value: 0
 
+    # Trackpad
+    # Natural scrolling
+  - domain: "Apple Global Domain"
+    key: com.apple.swipescrolldirection
+    type: integer
+    value: 1
+    # Zoom in our out
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadPinch
+    type: integer
+    value: 1
+    # Intelligent zoom
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadTwoFingerDoubleTapGesture
+    type: integer
+    value: 1
+    # Turn
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadRotate
+    type: integer
+    value: 1
+    # Click by tap
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: Clicking
+    type: integer
+    value: 1
+    # Natural scrolling
+  - domain: "Apple Global Domain"
+    key: com.apple.trackpad.scaling
+    type: float
+    value: 2
+    # Silent click
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: ActuationStrength
+    type: integer
+    value: 1
+    # Force click
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: ForceSuppressed
+    type: integer
+    value: 1
+    # Right click bottom right corner
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadRightClick
+    type: integer
+    value: 0
+    # Right click bottom right corner
+  - domain: "com.apple.driver.AppleBluetoothMultitouch.trackpad"
+    key: TrackpadCornerSecondaryClick
+    type: integer
+    value: 2
+    # Right click bottom right corner
+  - domain: "com.apple.driver.AppleBluetoothMultitouch.trackpad"
+    key: TrackpadRightClick
+    type: integer
+    value: 0
+    # Right click bottom right corner
+  - domain: "Apple Global Domain"
+    key: ContextMenuGesture
+    type: integer
+    value: 1
+    # Swipe navigate with two fingers
+  - domain: "Apple Global Domain"
+    key: AppleEnableSwipeNavigateWithScrolls
+    type: integer
+    value: 1
+    # ...
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadFourFingerHorizSwipeGesture
+    type: integer
+    value: 2
+    # ...
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadTwoFingerFromRightEdgeSwipeGesture
+    type: integer
+    value: 3
+    # ...
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    key: TrackpadFourFingerVertSwipeGesture
+    type: integer
+    value: 2
+    # ...
+  - domain: "com.apple.dock"
+    key: showLaunchpadGestureEnabled
+    type: integer
+    value: 0
+    # ...
+  - domain: "com.apple.dock"
+    key: showDesktopGestureEnabled
+    type: integer
+    value: 1
+    # ...
+  - domain: "com.apple.driver.AppleBluetoothMultitouch.trackpad"
+    key: TrackpadFiveFingerPinchGesture
+    type: integer
+    value: 2
+    # ...
+  - domain: "com.apple.driver.AppleBluetoothMultitouch.trackpad"
+    key: TrackpadFourFingerPinchGesture
+    type: integer
+    value: 2
+
     # Expand Print Panel by Default
   - key: PMPrintingExpandedStateForPrint
     type: bool
