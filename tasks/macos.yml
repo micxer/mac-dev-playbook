@@ -3,3 +3,13 @@
 - name: Run .macos dotfiles.
   command: "{{ macos_script }}"
   changed_when: false
+
+- name: Configure macOS defaults settings
+  community.general.osx_defaults:
+    array_add: "{{ item.array_add | default(false) }}"
+    domain: "{{ item.domain | default('NSGlobalDomain') }}"
+    key: "{{ item.key }}"
+    type: "{{ item.name | default('string') }}"
+    value: "{{ item.value }}"
+    state: present
+  loop: "{{ macos_defaults }}"
