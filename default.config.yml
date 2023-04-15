@@ -230,7 +230,12 @@ macos_defaults:
     key: AppleDictationAutoEnable
     type: integer
     value: 1
-    
+
+    # Always show scrollbars 
+  - domain: "Apple Global Domain"
+    key: AppleShowScrollBars
+    type: string
+    value: Always
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
