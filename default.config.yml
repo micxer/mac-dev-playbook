@@ -338,6 +338,17 @@ macos_defaults:
     type: string
     value: Maximize
 
+    # No Siri
+  - domain: com.apple.assistant.support
+    key: "Assistant Enabled"
+    type: bool
+    value: "false"
+    # Don't wanna see it either
+  - domain: com.apple.Siri
+    key: "StatusMenuVisible"
+    type: bool
+    value: "false"
+
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
