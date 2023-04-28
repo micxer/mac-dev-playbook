@@ -199,6 +199,102 @@ macos_defaults:
     key: showDesktopGestureEnabled
     type: integer
     value: 1
+    # Dock icon size
+  - domain: "com.apple.dock"
+    key: tilesize
+    type: float
+    value: 50
+    # show Dock at bottom
+  - domain: "com.apple.dock"
+    key: orientation
+    type: string
+    value: bottom
+    # show Dock at bottom
+  - domain: "com.apple.dock"
+    key: "minimize-to-application"
+    type: bool
+    value: "true"
+    # top left corner -> screensaver
+  - domain: "com.apple.dock"
+    key: "wvous-tl-corner"
+    type: integer
+    value: 5
+  - domain: "com.apple.dock"
+    key: "wvous-tl-modifier"
+    type: integer
+    value: 0
+    # bottom left corner -> Mission Control
+  - domain: "com.apple.dock"
+    key: "wvous-bl-corner"
+    type: integer
+    value: 2
+  - domain: "com.apple.dock"
+    key: "wvous-bl-modifier"
+    type: integer
+    value: 0
+    # top right corner -> Desk
+  - domain: "com.apple.dock"
+    key: "wvous-tr-corner"
+    type: integer
+    value: 4
+  - domain: "com.apple.dock"
+    key: "wvous-tr-modifier"
+    type: integer
+    value: 0
+    # bottom right corner -> program windows
+  - domain: "com.apple.dock"
+    key: "wvous-br-corner"
+    type: integer
+    value: 3
+  - domain: "com.apple.dock"
+    key: "wvous-br-modifier"
+    type: integer
+    value: 0
+    # auto-hide Dock
+  - domain: "com.apple.dock"
+    key: "autohide"
+    type: bool
+    value: "true"
+    # minimize effect funnel
+  - domain: "com.apple.dock"
+    key: "mineffect"
+    type: string
+    value: "genie"
+    # double click title bar -> maximize
+  - domain: "Apple Global Domain"
+    key: AppleActionOnDoubleClick
+    type: string
+    value: Maximize
+    # minimize to application icon
+  - domain: "com.apple.dock"
+    key: "minimize-to-application"
+    type: bool
+    value: "true"
+    # animate opening app
+  - domain: "com.apple.dock"
+    key: "launchanim"
+    type: bool
+    value: "true"
+    # show indicator for open apps
+  - domain: "com.apple.dock"
+    key: "show-process-indicators"
+    type: bool
+    value: "true"
+    # show recently open apps
+  - domain: "com.apple.dock"
+    key: "show-recents"
+    type: bool
+    value: "false"
+    # always show menu bar in fullscreen
+  - domain: "Apple Global Domain"
+    key: AppleMenuBarVisibleInFullscreen
+    type: bool
+    value: "true"
+    # always show menu bar on desktop
+  - domain: "Apple Global Domain"
+    key: _HIHideMenuBar
+    type: bool
+    value: "false"
     # ...
   - domain: "com.apple.driver.AppleBluetoothMultitouch.trackpad"
     key: TrackpadFiveFingerPinchGesture
@@ -231,11 +327,16 @@ macos_defaults:
     type: integer
     value: 1
 
-    # Always show scrollbars 
+    # Always show scrollbars
   - domain: "Apple Global Domain"
     key: AppleShowScrollBars
     type: string
     value: Always
+    # Maximize window o double-clicking the title bar
+  - domain: "Apple Global Domain"
+    key: AppleActionOnDoubleClick
+    type: string
+    value: Maximize
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
