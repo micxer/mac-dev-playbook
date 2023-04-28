@@ -65,14 +65,14 @@ mas_password: ""
 macos_script: "~/.macos --no-restart"
 
 macos_defaults:
-    # 
+    #
   - domain: com.apple.menuextra.clock
     key: DateFormat
     value: "EEE HH:mm:ss"
     # Keyboard
     # Key Repeat / Change the "press and hold" behavior.
   - key: ApplePressAndHoldEnabled
-    type: bool
+    type: string
     value: "true"
     # Key Repeat Rate
   - domain: "Apple Global Domain"
@@ -86,26 +86,26 @@ macos_defaults:
     value: 25
     # Full Keyboard Access / Enable Tab in modal dialogs.
   - key: AppleKeyboardUIMode
-    type: integer
+    type: string
     value: 3
     # Auto-Correct
   - key: NSAutomaticSpellingCorrectionEnabled
     type: bool
     value: "false"
-    # 
+    #
   - domain: "Apple Global Domain"
     key: KeyRepeatNSAutomaticPeriodSubstitutionEnabled
-    type: integer
+    type: string
     value: 0
-    # 
+    #
   - domain: "Apple Global Domain"
     key: KeyRepeatNSAutomaticCapitalizationEnabled
-    type: integer
+    type: string
     value: 0
-    # 
+    #
   - domain: "Apple Global Domain"
     key: KeyRepeatNSAutomaticSpellingCorrectionEnabled
-    type: integer
+    type: string
     value: 0
 
     # Trackpad
