@@ -29,6 +29,7 @@ dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
   - .gitconfig
   - .vimrc
+  - .zkbd
   - .zshrc
 
 homebrew_installed_packages:
