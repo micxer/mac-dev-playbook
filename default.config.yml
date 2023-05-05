@@ -345,6 +345,19 @@ macos_defaults:
     type: bool
     value: "false"
 
+    # Main language
+  - domain: "Apple Global Domain"
+    key: AppleLanguages
+    type: array
+    value:
+      - "de-DE"
+  - domain: "Apple Global Domain"
+    key: AppleLocale
+    type: string
+    value: de_DE
+
+
+
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
