@@ -27,8 +27,6 @@ dotfiles_repo: https://github.com/micxer/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
-  # - .inputrc
-  - .macos
   - .gitconfig
   - .vimrc
   - .zshrc
@@ -61,8 +59,6 @@ homebrew_cask_apps:
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
-
-macos_script: "~/.macos --no-restart"
 
 macos_defaults:
     #
