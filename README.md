@@ -4,13 +4,15 @@
 
 [![CI][badge-gh-actions]][link-gh-actions]
 
-This playbook installs and configures most of the software I use on my Mac for web and software development. Some things
-in macOS are slightly difficult to automate, so I still have a few manual installation steps, but at least it's all
-documented here.
+These instructions are heavily inspired by
+[geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook). I have added, changed or removed a few
+things here and there to adapt it to my needs.
 
 ## Installation
 
   1. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html):
+     (I'm still not sure if I like it that way as I'm installing Homebrew later on anyway and then ansible again via
+     Homebrew which is weird)
 
      1. Upgrade Pip: `sudo pip3 install --upgrade pip`
      2. Install Ansible: `pip3 install ansible`
