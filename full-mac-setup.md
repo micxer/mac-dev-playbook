@@ -1,17 +1,19 @@
-# Full Mac Setup Process (for Jeff Geerling)
+# Full Mac Setup Process (for myself)
 
-There are some things in life that just can't be automated... or aren't 100% worth the time :(
+There are some things in life that just can't be automated... or aren't 100% worth the time 😒
 
 This document covers that, at least in terms of setting up a brand new Mac out of the box.
 
 ## Initial configuration of a brand new Mac
 
-Before starting, I completed Apple's mandatory macOS setup wizard (creating a local user account, and optionally signing into my iCloud account). Once on the macOS desktop, I do the following (in order):
+Before starting, I completed Apple's mandatory macOS setup wizard (creating a local user account). Once on the macOS
+desktop, I do the following (in order):
 
   - Install Command Line Tools and Ansible (following the guide in [README.md](README.md))
   - **Sign in in App Store** (since `mas` can't sign in automatically)
-  - Clone mac-dev-playbook to the Mac: `git clone git@github.com:micxer/mac-dev-playbook.git`
-  - Drop `config.yml` from `~/Dropbox/Apps/Config` to the playbook (copy over the network or using a USB flash drive).
+  - Clone mac-dev-playbook to the Mac: `git clone https://github.com/micxer/mac-dev-playbook.git`
+  - Open the browser and login to Nextcloud
+  - Download `Configs/config.yml` to the playbook directory
   - Run the playbook with `--skip-tags post`.
     - If there are errors, you may need to finish up other tasks like installing 'old-fashioned' apps first (since I try to place Photoshop in the Dock and it can't be installed automatically). Then, run the playbook again ;)
   - Start Synchronization tasks:
@@ -77,4 +79,6 @@ git clone git://github.com/scrooloose/nerdtree.git
   - Make sure to backup anything new:
     - Fonts from ~/Library/Fonts
     - Sequel Ace shortcuts from ~/Library/Containers/com.sequel-ace.sequel-ace/Data/Library/Application\ Support/Sequel\ Ace/Data/Favorites.plist
+    - VSCodium extensions list
+    - Signatures in Preview
   - Follow Apple's guide [here](https://support.apple.com/en-au/HT212749)
