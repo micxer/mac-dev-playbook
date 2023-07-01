@@ -1,0 +1,4 @@
+- name: Copy rectangle configuration into place.
+  ansible.builtin.copy:
+    src: RectangeConfig.json
+    dest: "$HOME/Library/Application Support/Rectangle/RectangleConfig.json"
